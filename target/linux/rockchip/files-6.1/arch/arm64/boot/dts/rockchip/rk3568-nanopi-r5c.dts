@@ -32,7 +32,20 @@
 	chosen: chosen {
 		stdout-path = "serial2:1500000n8";
 	};
+	
+	gpio_keys: gpio-keys {
+		compatible = "gpio-keys";
+		pinctrl-0 = <&reset_button_pin>;
+		pinctrl-names = "default";
 
+		reset {
+			label = "reset";
+			gpios = <&gpio0 RK_PB7 GPIO_ACTIVE_LOW>;
+			linux,code = <KEY_RESTART>;
+			debounce-interval = <50>;
+		};
+	};
+	
 	hdmi-con {
 		compatible = "hdmi-connector";
 		type = "a";
@@ -549,6 +562,12 @@
 		};
 		vcc5v0_usb_otg_en: vcc5v0_usb_otg_en {
 			rockchip,pins = <0 RK_PA5 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+	};
+	
+	gpio-key {
+		reset_button_pin: reset-button-pin {
+			rockchip,pins = <0 RK_PA7 RK_FUNC_GPIO &pcfg_pull_up>;
 		};
 	};
 };

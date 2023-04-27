@@ -101,7 +101,7 @@ define U-Boot/lubancat1n-rk3566
     embedfire_lubancat1n
   DEPENDS:=+PACKAGE_u-boot-lubancat1n-rk3566:arm-trusted-firmware-rk3566
   PKG_BUILD_DEPENDS:=arm-trusted-firmware-rockchip-vendor
-  ATF:=rk3568_bl31_v1.28.elf
+  ATF:=rk3568_bl31_v1.38.elf
   DDR:=rk3566_ddr_1056MHz_v1.13.bin
 endef
 
@@ -112,7 +112,7 @@ define U-Boot/lubancat1-rk3566
     embedfire_lubancat1
   DEPENDS:=+PACKAGE_u-boot-lubancat1-rk3566:arm-trusted-firmware-rk3566
   PKG_BUILD_DEPENDS:=arm-trusted-firmware-rockchip-vendor
-  ATF:=rk3568_bl31_v1.28.elf
+  ATF:=rk3568_bl31_v1.38.elf
   DDR:=rk3566_ddr_1056MHz_v1.13.bin
 endef
 
@@ -125,7 +125,7 @@ define U-Boot/lubancat2-rk3568
     embedfire_lubancat2
   DEPENDS:=+PACKAGE_u-boot-lubancat2-rk3568:arm-trusted-firmware-rk3568
   PKG_BUILD_DEPENDS:=arm-trusted-firmware-rockchip-vendor
-  ATF:=rk3568_bl31_v1.28.elf
+  ATF:=rk3568_bl31_v1.38.elf
   DDR:=rk3568_ddr_1560MHz_v1.13.bin
 endef
 
@@ -136,7 +136,7 @@ define U-Boot/lubancat2n-rk3568
     embedfire_lubancat2n
   DEPENDS:=+PACKAGE_u-boot-lubancat2n-rk3568:arm-trusted-firmware-rk3568
   PKG_BUILD_DEPENDS:=arm-trusted-firmware-rockchip-vendor
-  ATF:=rk3568_bl31_v1.28.elf
+  ATF:=rk3568_bl31_v1.38.elf
   DDR:=rk3568_ddr_1560MHz_v1.13.bin
 endef
 
@@ -147,7 +147,7 @@ define U-Boot/nanopi-r5s-rk3568
     friendlyarm_nanopi-r5s
   DEPENDS:=+PACKAGE_u-boot-nanopi-r5s-rk3568:arm-trusted-firmware-rk3568
   PKG_BUILD_DEPENDS:=arm-trusted-firmware-rockchip-vendor
-  ATF:=rk3568_bl31_v1.28.elf
+  ATF:=rk3568_bl31_v1.38.elf
   DDR:=rk3568_ddr_1560MHz_v1.13.bin
 endef
 
@@ -158,7 +158,7 @@ define U-Boot/nanopi-r5c-rk3568
     friendlyarm_nanopi-r5c
   DEPENDS:=+PACKAGE_u-boot-nanopi-r5c-rk3568:arm-trusted-firmware-rk3568
   PKG_BUILD_DEPENDS:=arm-trusted-firmware-rockchip-vendor
-  ATF:=rk3568_bl31_v1.28.elf
+  ATF:=rk3568_bl31_v1.38.elf
   DDR:=rk3568_ddr_1560MHz_v1.13.bin
 endef
 
@@ -169,7 +169,7 @@ define U-Boot/mrkaio-m68s-rk3568
     ezpro_mrkaio-m68s
   DEPENDS:=+PACKAGE_u-boot-mrkaio-m68s-rk3568:arm-trusted-firmware-rk3568
   PKG_BUILD_DEPENDS:=arm-trusted-firmware-rockchip-vendor
-  ATF:=rk3568_bl31_v1.28.elf
+  ATF:=rk3568_bl31_v1.38.elf
   DDR:=rk3568_ddr_1560MHz_v1.13.bin
 endef
 
@@ -182,7 +182,7 @@ define U-Boot/opc-h68k-rk3568
     hinlink_opc-h69k
   DEPENDS:=+PACKAGE_u-boot-opc-h68k-rk3568:arm-trusted-firmware-rk3568
   PKG_BUILD_DEPENDS:=arm-trusted-firmware-rockchip-vendor
-  ATF:=rk3568_bl31_v1.28.elf
+  ATF:=rk3568_bl31_v1.38.elf
   DDR:=rk3568_ddr_1560MHz_v1.13.bin
 endef
 

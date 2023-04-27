@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014-2022 OpenWrt.org
+# Copyright (C) 2014-2015 OpenWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -8,13 +8,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=fstools
-PKG_RELEASE:=$(AUTORELEASE)
+PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL=$(PROJECT_GIT)/project/fstools.git
-PKG_MIRROR_HASH:=28be14a1e28fc62e80681e1b5e7f2435692ee326b66afcc1f3d158764df686d5
-PKG_SOURCE_DATE:=2022-11-10
-PKG_SOURCE_VERSION:=3affe9ea5098c8bb90111ce97d50ad976ef0c034
+PKG_MIRROR_HASH:=4ec370a1cdc9fa69131f1403b064d2e05d54ee865411917410d7540454265319
+PKG_SOURCE_DATE:=2023-02-28
+PKG_SOURCE_VERSION:=bfe882d5ff4eeebb8f57c8a0f9b9e767a57870d8
 CMAKE_INSTALL:=1
 
 PKG_LICENSE:=GPL-2.0
@@ -48,7 +48,7 @@ define Package/fstools/config
 		depends on PACKAGE_fstools
 		depends on NAND_SUPPORT
 		bool "Support extroot functionality with UBIFS"
-		default n
+		default y
 		help
 			This option makes it possible to use extroot functionality if the root filesystem resides on an UBIFS partition
 
